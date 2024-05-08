@@ -36,8 +36,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
- - name: Check Space
-      working-directory: /workdir
+   - name: Check Space
       run: |
         df -hT $PWD
 
