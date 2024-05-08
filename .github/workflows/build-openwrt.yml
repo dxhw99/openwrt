@@ -36,6 +36,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
+ - name: Check Space
+      working-directory: /workdir
+      run: |
+        df -hT $PWD
+
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
