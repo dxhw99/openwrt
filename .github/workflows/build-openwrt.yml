@@ -38,7 +38,7 @@ jobs:
 
    - name: Check Space
       run: |
-        df -hT $PWD
+        df -h
 
     - name: Initialization environment
       env:
