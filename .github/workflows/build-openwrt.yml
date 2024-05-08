@@ -35,7 +35,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-
+      fetch-depth: 0
+      
     - name: Check Space
       run: |
         df -h
